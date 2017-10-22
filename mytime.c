@@ -31,7 +31,7 @@ static struct file_operations fops =
    .open = open,
    .read = read,
    .write = write,
-   .release = close,
+   .close = close,
 };
  
 static int __init ebbchar_init(void){
